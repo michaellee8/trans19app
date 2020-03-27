@@ -1,31 +1,48 @@
 import graphene
 import graphql_geojson
-from graphene_django.types import DjangoObjectType
+from graphene import relay, ObjectType
+from graphene_django import DjangoObjectType
+from graphene_django.filter import DjangoFilterConnectionField
 from server.models import PatientHistory, Patient, Location
 
 
-class PatientType(DjangoObjectType):
+class PatientNode(DjangoObjectType):
     class Meta:
         model = Patient
+        filter_fields = {
+            'name': ['exact', 'icontains'],
+            'hkid': ['exact', 'icontains'],
+            'case_num': ['exact', 'icontains']
+        }
+        interfaces = (relay.Node,)
 
 
-class LocationType(graphql_geojson.GeoJSONType):
+class LocationNode(graphql_geojson.GeoJSONType):
     class Meta:
         model = Location
         geojson_field = 'coordinate'
+        filter_fields = {
+            'name': ['exact', 'icontains'],
+            'address': ['exact', 'icontains'],
+            'district': ['exact', 'icontains']
+        }
+        interfaces = (relay.Node,)
 
 
-class PatientHistoryType(DjangoObjectType):
+class PatientHistoryNode(DjangoObjectType):
     class Meta:
         model = PatientHistory
+        filter_fields = {
+            "category": ['exact', 'icontains'],
+        }
+        interfaces = (relay.Node,)
 
 
 class Query(object):
-    all_patients = graphene.List(PatientType)
-    all_locations = graphene.List(PatientHistoryType)
+    patient = relay.Node.Field(PatientNode)
+    location = relay.Node.Field(LocationNode)
+    patient_history = relay.Node.Field(PatientHistoryNode)
 
-    def resolve_all_patients(self, info, **kwargs):
-        return Patient.objects.prefetch_related("histories").all()
-
-    def resolve_all_locations(self, info, **kwargs):
-        return Location.objects.prefetch_related("histories").all()
+    all_patients = DjangoFilterConnectionField(PatientNode)
+    all_locations = DjangoFilterConnectionField(PatientHistoryNode)
+    all_patient_histories = DjangoFilterConnectionField(PatientHistoryNode)
