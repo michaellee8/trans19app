@@ -20,7 +20,7 @@ class Location(models.Model):
 
 
 class PatientHistory(models.Model):
-    patient = models.ForeignKey(Patient, on_delete=models.CASCADE,
+    patient = models.ForeignKey(Patient, on_delete=models.SET_NULL, null=True,
                                 related_name="histories")
     location = models.ForeignKey(Location, on_delete=models.SET_NULL, null=True,
                                  related_name="histories")

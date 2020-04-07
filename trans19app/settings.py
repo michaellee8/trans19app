@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'server.apps.ServerConfig',
     'graphene_django',
+    'graphql_playground',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

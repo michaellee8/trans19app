@@ -16,9 +16,14 @@ Including another URLconf
 from django.contrib.gis import admin
 from django.urls import include, path
 from graphene_django.views import GraphQLView
+from graphql_playground.views import GraphQLPlaygroundView
 from trans19app.schema import graphql_schema
+from django.views.decorators.csrf import csrf_exempt
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('graphql', GraphQLView.as_view(graphiql=True, schema=graphql_schema))
+    path('graphql', csrf_exempt(
+        GraphQLView.as_view(graphiql=True, schema=graphql_schema))),
+    path('playground/',
+         GraphQLPlaygroundView.as_view(endpoint="/graphql"))
 ]

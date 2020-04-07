@@ -1,9 +1,13 @@
 import graphene
-from server.schema import Query as ApiQuery
+from server.schema import Query as ApiQuery, Mutation as ApiMutation
 
 
-class Query(ApiQuery, graphene.ObjectType):
+class Query(graphene.ObjectType, ApiQuery):
     pass
 
 
-graphql_schema = graphene.Schema(query=Query)
+class Mutation(graphene.ObjectType, ApiMutation):
+    pass
+
+
+graphql_schema = graphene.Schema(query=Query, mutation=Mutation)
