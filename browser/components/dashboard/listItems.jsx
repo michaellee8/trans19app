@@ -9,7 +9,7 @@ import Link from "../../src/Link";
 
 export const mainListItems = (
   <div>
-    <Link href={"patients"}>
+    <Link href={"/patients"}>
       <ListItem button>
         <ListItemIcon>
           <SupervisorAccountIcon />

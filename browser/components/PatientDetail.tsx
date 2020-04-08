@@ -7,11 +7,15 @@ import {
   Patients,
   PatientsVariables,
 } from "../graphql/operations";
-import { Grid } from "@material-ui/core";
+import { Grid, TableRow } from "@material-ui/core";
 import { spacing } from "@material-ui/system";
 import React from "react";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/styles";
+import Table from "@material-ui/core/Table";
+import TableHead from "@material-ui/core/TableHead";
+import TableCell from "@material-ui/core/TableCell";
+import TableBody from "@material-ui/core/TableBody";
 
 const GET_PATIENT_DETAIL = gql`
   query GetPatientDetail($id: ID!) {
@@ -74,12 +78,40 @@ const PatientDetail = () => {
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={2}>
-          <Grid>
+          <Grid item>
             <p>Name: {patient?.name}</p>
             <p>HKID: {patient?.hkid}</p>
             <p>Birthday: {patient?.birthday}</p>
             <p>Confirmed Day: {patient?.confirmedDay}</p>
             <p>Case Number: {patient?.caseNum}</p>
+          </Grid>
+          <Grid item>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Start</TableCell>
+                  <TableCell>End</TableCell>
+                  <TableCell>Category</TableCell>
+                  <TableCell>Name</TableCell>
+                  <TableCell>District</TableCell>
+                  <TableCell>Address</TableCell>
+                  <TableCell>Detail</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {patient?.histories?.map((history) => (
+                  <TableRow key={history.id}>
+                    <TableCell>{history.start}</TableCell>
+                    <TableCell>{history.end}</TableCell>
+                    <TableCell>{history.category}</TableCell>
+                    <TableCell>{history.location?.name}</TableCell>
+                    <TableCell>{history.location?.district}</TableCell>
+                    <TableCell>{history.location?.address}</TableCell>
+                    <TableCell>{history.detail}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </Grid>
         </Grid>
       </Grid>
