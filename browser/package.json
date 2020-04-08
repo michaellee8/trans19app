@@ -1,15 +1,37 @@
 {
-  "name": "browser",
-  "version": "0.1.0",
-  "private": true,
+  "name": "with-typescript",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "type-check": "tsc",
+    "introspect-schema": "apollo-codegen introspect-schema graphql/schema/schema.graphql --output graphql/schema/schema.json",
+    "fetch-schema": "get-graphql-schema http://localhost:8000/graphql > graphql/schema/schema.graphql",
+    "gen": "apollo-codegen generate ./graphql/query/*.graphql --target typescript --output ./graphql/query.ts && apollo-codegen generate ./graphql/mutation/*.graphql --target typescript --output ./graphql/mutation.ts"
   },
   "dependencies": {
-    "next": "9.3.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "@apollo/react-hooks": "^3.1.4",
+    "@material-ui/core": "^4.9.9",
+    "@material-ui/icons": "^4.9.1",
+    "apollo-boost": "^0.4.7",
+    "graphql": "^15.0.0",
+    "isomorphic-unfetch": "3.0.0",
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "apollo-codegen": "^0.20.2",
+    "get-graphql-schema": "^2.1.2",
+    "typescript": "3.7.3"
+  },
+  "license": "ISC",
+  "private": true,
+  "author": {
+    "name": "michaellee8"
   }
 }

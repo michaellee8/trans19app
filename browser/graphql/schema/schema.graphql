@@ -1,0 +1,345 @@
+input CreateLocationMutationInput {
+  name: String!
+  address: String!
+  district: String!
+  coordinateX: Float!
+  coordinateY: Float!
+  clientMutationId: String
+}
+
+type CreateLocationMutationPayload {
+  id: ID!
+  name: String!
+  address: String!
+  district: String!
+  coordinateX: Float!
+  coordinateY: Float!
+  clientMutationId: String
+}
+
+input CreatePatientHistoryMutationInput {
+  patientId: ID!
+  locationId: ID!
+  start: Date!
+  end: Date!
+  detail: String!
+  category: String!
+  clientMutationId: String
+}
+
+type CreatePatientHistoryMutationPayload {
+  id: ID!
+  patientId: ID
+  locationId: ID
+  start: Date!
+  end: Date!
+  detail: String!
+  category: String!
+  clientMutationId: String
+}
+
+input CreatePatientMutationInput {
+  name: String!
+  hkid: String!
+  birthday: Date!
+  confirmedDay: Date!
+  caseNum: Int!
+  clientMutationId: String
+}
+
+type CreatePatientMutationPayload {
+  id: ID!
+  name: String!
+  hkid: String!
+  birthday: Date!
+  confirmedDay: Date!
+  caseNum: Int!
+  clientMutationId: String
+}
+
+"""
+The `Date` scalar type represents a Date
+value as specified by
+[iso8601](https://en.wikipedia.org/wiki/ISO_8601).
+"""
+scalar Date
+
+input DeleteLocationMutationInput {
+  id: ID!
+  clientMutationId: String
+}
+
+type DeleteLocationMutationPayload {
+  id: ID!
+  clientMutationId: String
+}
+
+input DeletePatientHistoryMutationInput {
+  id: ID!
+  clientMutationId: String
+}
+
+type DeletePatientHistoryMutationPayload {
+  id: ID!
+  clientMutationId: String
+}
+
+input DeletePatientMutationInput {
+  id: ID!
+  clientMutationId: String
+}
+
+type DeletePatientMutationPayload {
+  id: ID!
+  clientMutationId: String
+}
+
+"""
+The `GenericScalar` scalar type represents a generic
+GraphQL scalar value that could be:
+String, Boolean, Int, Float, List or Object.
+"""
+scalar GenericScalar
+
+"""
+
+`GeometryObjectType` represents a pair of values:
+- Geometry `type`
+- Geometry `coordinates`
+
+"""
+type GeometryObjectType {
+  type: String
+  coordinates: GenericScalar
+}
+
+type LocationNode implements Node {
+  type: String
+
+  """The ID of the object."""
+  id: ID!
+  geometry: GeometryObjectType!
+  bbox: GenericScalar
+  properties: LocationProperties
+}
+
+type LocationNodeConnection {
+  """Pagination data for this connection."""
+  pageInfo: PageInfo!
+
+  """Contains the nodes in this connection."""
+  edges: [LocationNodeEdge]!
+}
+
+"""A Relay edge containing a `LocationNode` and its cursor."""
+type LocationNodeEdge {
+  """The item at the end of the edge"""
+  node: LocationNode
+
+  """A cursor for use in pagination"""
+  cursor: String!
+}
+
+type LocationProperties {
+  name: String!
+  address: String!
+  district: String!
+  histories: [PatientHistoryType!]!
+}
+
+type LocationType {
+  id: ID!
+  name: String!
+  address: String!
+  district: String!
+  geometry: GeometryObjectType!
+  histories: [PatientHistoryType!]!
+}
+
+type Mutation {
+  createPatient(input: CreatePatientMutationInput!): CreatePatientMutationPayload
+  updatePatient(input: UpdatePatientMutationInput!): UpdatePatientMutationPayload
+  deletePatient(input: DeletePatientMutationInput!): DeletePatientMutationPayload
+  createLocation(input: CreateLocationMutationInput!): CreateLocationMutationPayload
+  updateLocation(input: UpdateLocationMutationInput!): UpdateLocationMutationPayload
+  deleteLocation(input: DeleteLocationMutationInput!): DeleteLocationMutationPayload
+  createPatientHistory(input: CreatePatientHistoryMutationInput!): CreatePatientHistoryMutationPayload
+  updatePatientHistory(input: UpdatePatientHistoryMutationInput!): UpdatePatientHistoryMutationPayload
+  deletePatientHistory(input: DeletePatientHistoryMutationInput!): DeletePatientHistoryMutationPayload
+}
+
+"""An object with an ID"""
+interface Node {
+  """The ID of the object."""
+  id: ID!
+}
+
+"""
+The Relay compliant `PageInfo` type, containing data necessary to paginate this connection.
+"""
+type PageInfo {
+  """When paginating forwards, are there more items?"""
+  hasNextPage: Boolean!
+
+  """When paginating backwards, are there more items?"""
+  hasPreviousPage: Boolean!
+
+  """When paginating backwards, the cursor to continue."""
+  startCursor: String
+
+  """When paginating forwards, the cursor to continue."""
+  endCursor: String
+}
+
+type PatientHistoryNode implements Node {
+  """The ID of the object."""
+  id: ID!
+  patient: PatientType
+  location: LocationType
+  start: Date!
+  end: Date!
+  detail: String!
+  category: String!
+}
+
+type PatientHistoryNodeConnection {
+  """Pagination data for this connection."""
+  pageInfo: PageInfo!
+
+  """Contains the nodes in this connection."""
+  edges: [PatientHistoryNodeEdge]!
+}
+
+"""A Relay edge containing a `PatientHistoryNode` and its cursor."""
+type PatientHistoryNodeEdge {
+  """The item at the end of the edge"""
+  node: PatientHistoryNode
+
+  """A cursor for use in pagination"""
+  cursor: String!
+}
+
+type PatientHistoryType {
+  id: ID!
+  patient: PatientType
+  location: LocationType
+  start: Date!
+  end: Date!
+  detail: String!
+  category: String!
+}
+
+type PatientNode implements Node {
+  """The ID of the object."""
+  id: ID!
+  name: String!
+  hkid: String!
+  birthday: Date!
+  confirmedDay: Date!
+  caseNum: Int!
+  histories: [PatientHistoryType!]!
+}
+
+type PatientNodeConnection {
+  """Pagination data for this connection."""
+  pageInfo: PageInfo!
+
+  """Contains the nodes in this connection."""
+  edges: [PatientNodeEdge]!
+}
+
+"""A Relay edge containing a `PatientNode` and its cursor."""
+type PatientNodeEdge {
+  """The item at the end of the edge"""
+  node: PatientNode
+
+  """A cursor for use in pagination"""
+  cursor: String!
+}
+
+type PatientType {
+  id: ID!
+  name: String!
+  hkid: String!
+  birthday: Date!
+  confirmedDay: Date!
+  caseNum: Int!
+  histories: [PatientHistoryType!]!
+}
+
+type Query {
+  """The ID of the object"""
+  patient(id: ID!): PatientNode
+
+  """The ID of the object"""
+  location(id: ID!): LocationNode
+
+  """The ID of the object"""
+  patientHistory(id: ID!): PatientHistoryNode
+  allPatients(before: String, after: String, first: Int, last: Int, name: String, name_Icontains: String, hkid: String, hkid_Icontains: String, caseNum: Int, caseNum_Icontains: Int): PatientNodeConnection
+  allLocations(before: String, after: String, first: Int, last: Int, name: String, name_Icontains: String, address: String, address_Icontains: String, district: String, district_Icontains: String): LocationNodeConnection
+  allPatientHistories(before: String, after: String, first: Int, last: Int, category: String, category_Icontains: String): PatientHistoryNodeConnection
+}
+
+input UpdateLocationMutationInput {
+  id: ID!
+  name: String
+  address: String
+  district: String
+  coordinateX: Float
+  coordinateY: Float
+  clientMutationId: String
+}
+
+type UpdateLocationMutationPayload {
+  id: ID!
+  name: String!
+  address: String!
+  district: String!
+  coordinateX: Float!
+  coordinateY: Float!
+  clientMutationId: String
+}
+
+input UpdatePatientHistoryMutationInput {
+  id: ID!
+  patientId: ID
+  locationId: ID
+  start: Date
+  end: Date
+  detail: String
+  category: String
+  clientMutationId: String
+}
+
+type UpdatePatientHistoryMutationPayload {
+  id: ID!
+  patientId: ID
+  locationId: ID
+  start: Date!
+  end: Date!
+  detail: String!
+  category: String!
+  clientMutationId: String
+}
+
+input UpdatePatientMutationInput {
+  id: ID!
+  name: String
+  hkid: String
+  birthday: Date
+  confirmedDay: Date
+  caseNum: Int
+  clientMutationId: String
+}
+
+type UpdatePatientMutationPayload {
+  id: ID!
+  name: String!
+  hkid: String!
+  birthday: Date!
+  confirmedDay: Date!
+  caseNum: Int!
+  clientMutationId: String
+}
+

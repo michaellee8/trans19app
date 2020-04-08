@@ -1,0 +1,19 @@
+query Pateients($cursor: String){
+    allPatients(first: 10, after: $cursor) {
+        edges {
+            node {
+                id
+                name
+                hkid
+                confirmedDay
+                caseNum
+            }
+        }
+        pageInfo{
+            hasNextPage
+            hasPreviousPage
+            startCursor
+            endCursor
+        }
+    }
+}
