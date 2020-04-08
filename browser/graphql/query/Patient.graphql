@@ -1,0 +1,26 @@
+query Patient($id: ID!){
+    patient(id: $id){
+        id
+        name
+        hkid
+        birthday
+        confirmedDay
+        caseNum
+        histories{
+            id
+            start
+            end
+            category
+            detail
+            location{
+                address
+                district
+                name
+                id
+                geometry{
+                    coordinates
+                }
+            }
+        }
+    }
+}

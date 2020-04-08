@@ -12,9 +12,4 @@ application that uses GraphQL as API, which can be navigated in http://127.0.0.1
 The frontend consists of a React application that uses Next.js, Material-UI and Apollo Client. You 
 can run its development instance by running `yarn dev` in the `browser` directory.
 
-There are also `docker-compose` integration on plan, which wil be runnable by a simple 
-`docker-compose up -d` command.
-
-A mobile app using Flutter may also be developed if time allows.
-
 Written by Michael Lee (michaellee8). Licensed in MIT.

@@ -12,7 +12,7 @@
         {
           "kind": "OBJECT",
           "name": "Query",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "patient",
@@ -20,7 +20,7 @@
               "args": [
                 {
                   "name": "id",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -47,7 +47,7 @@
               "args": [
                 {
                   "name": "id",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -74,7 +74,7 @@
               "args": [
                 {
                   "name": "id",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -97,11 +97,11 @@
             },
             {
               "name": "allPatients",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "before",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -111,7 +111,7 @@
                 },
                 {
                   "name": "after",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -121,7 +121,7 @@
                 },
                 {
                   "name": "first",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -131,7 +131,7 @@
                 },
                 {
                   "name": "last",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -141,7 +141,7 @@
                 },
                 {
                   "name": "name",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -151,7 +151,7 @@
                 },
                 {
                   "name": "name_Icontains",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -161,7 +161,7 @@
                 },
                 {
                   "name": "hkid",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -171,7 +171,7 @@
                 },
                 {
                   "name": "hkid_Icontains",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -181,7 +181,7 @@
                 },
                 {
                   "name": "caseNum",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -191,7 +191,7 @@
                 },
                 {
                   "name": "caseNum_Icontains",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -210,11 +210,11 @@
             },
             {
               "name": "allLocations",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "before",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -224,7 +224,7 @@
                 },
                 {
                   "name": "after",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -234,7 +234,7 @@
                 },
                 {
                   "name": "first",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -244,7 +244,7 @@
                 },
                 {
                   "name": "last",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -254,7 +254,7 @@
                 },
                 {
                   "name": "name",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -264,7 +264,7 @@
                 },
                 {
                   "name": "name_Icontains",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -274,7 +274,7 @@
                 },
                 {
                   "name": "address",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -284,7 +284,7 @@
                 },
                 {
                   "name": "address_Icontains",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -294,7 +294,7 @@
                 },
                 {
                   "name": "district",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -304,7 +304,7 @@
                 },
                 {
                   "name": "district_Icontains",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -323,11 +323,11 @@
             },
             {
               "name": "allPatientHistories",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "before",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -337,7 +337,7 @@
                 },
                 {
                   "name": "after",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -347,7 +347,7 @@
                 },
                 {
                   "name": "first",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -357,7 +357,7 @@
                 },
                 {
                   "name": "last",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -367,7 +367,7 @@
                 },
                 {
                   "name": "category",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -377,7 +377,7 @@
                 },
                 {
                   "name": "category_Icontains",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -401,19 +401,9 @@
           "possibleTypes": null
         },
         {
-          "kind": "SCALAR",
-          "name": "ID",
-          "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
           "kind": "OBJECT",
           "name": "PatientNode",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "id",
@@ -592,6 +582,16 @@
         },
         {
           "kind": "SCALAR",
+          "name": "ID",
+          "description": "The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `\"4\"`) or integer (such as `4`) input value will be accepted as an ID.",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
           "name": "String",
           "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
           "fields": null,
@@ -613,7 +613,7 @@
         {
           "kind": "SCALAR",
           "name": "Int",
-          "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1. ",
+          "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31 - 1) and 2^31 - 1 since represented in JSON as double-precision floating point numbers specifiedby [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point).",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -623,7 +623,7 @@
         {
           "kind": "OBJECT",
           "name": "PatientHistoryType",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "id",
@@ -738,7 +738,7 @@
         {
           "kind": "OBJECT",
           "name": "PatientType",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "id",
@@ -869,7 +869,7 @@
         {
           "kind": "OBJECT",
           "name": "LocationType",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "id",
@@ -984,11 +984,11 @@
         {
           "kind": "OBJECT",
           "name": "GeometryObjectType",
-          "description": "`GeometryObjectType` represents a pair of values:\n- Geometry `type`\n- Geometry `coordinates`",
+          "description": "\n`GeometryObjectType` represents a pair of values:\n- Geometry `type`\n- Geometry `coordinates`\n",
           "fields": [
             {
               "name": "type",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -1000,7 +1000,7 @@
             },
             {
               "name": "coordinates",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -1029,11 +1029,11 @@
         {
           "kind": "OBJECT",
           "name": "LocationNode",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "type",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -1077,7 +1077,7 @@
             },
             {
               "name": "bbox",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -1089,7 +1089,7 @@
             },
             {
               "name": "properties",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -1114,7 +1114,7 @@
         {
           "kind": "OBJECT",
           "name": "LocationProperties",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "name",
@@ -1197,7 +1197,7 @@
         {
           "kind": "OBJECT",
           "name": "PatientHistoryNode",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "id",
@@ -1318,7 +1318,7 @@
         {
           "kind": "OBJECT",
           "name": "PatientNodeConnection",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "pageInfo",
@@ -1481,7 +1481,7 @@
         {
           "kind": "OBJECT",
           "name": "LocationNodeConnection",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "pageInfo",
@@ -1567,7 +1567,7 @@
         {
           "kind": "OBJECT",
           "name": "PatientHistoryNodeConnection",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "pageInfo",
@@ -1653,15 +1653,15 @@
         {
           "kind": "OBJECT",
           "name": "Mutation",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "createPatient",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1684,11 +1684,11 @@
             },
             {
               "name": "updatePatient",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1711,11 +1711,11 @@
             },
             {
               "name": "deletePatient",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1738,11 +1738,11 @@
             },
             {
               "name": "createLocation",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1765,11 +1765,11 @@
             },
             {
               "name": "updateLocation",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1792,11 +1792,11 @@
             },
             {
               "name": "deleteLocation",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1819,11 +1819,11 @@
             },
             {
               "name": "createPatientHistory",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1846,11 +1846,11 @@
             },
             {
               "name": "updatePatientHistory",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1873,11 +1873,11 @@
             },
             {
               "name": "deletePatientHistory",
-              "description": "",
+              "description": null,
               "args": [
                 {
                   "name": "input",
-                  "description": "",
+                  "description": null,
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
@@ -1905,104 +1905,13 @@
           "possibleTypes": null
         },
         {
-          "kind": "INPUT_OBJECT",
-          "name": "CreatePatientMutationInput",
-          "description": "",
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "name",
-              "description": "",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "hkid",
-              "description": "",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "birthday",
-              "description": "",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Date",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "confirmedDay",
-              "description": "",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Date",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "caseNum",
-              "description": "",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "",
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
           "kind": "OBJECT",
           "name": "CreatePatientMutationPayload",
-          "description": "",
+          "description": null,
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2018,7 +1927,7 @@
             },
             {
               "name": "name",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2034,7 +1943,7 @@
             },
             {
               "name": "hkid",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2050,7 +1959,7 @@
             },
             {
               "name": "birthday",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2066,7 +1975,7 @@
             },
             {
               "name": "confirmedDay",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2082,7 +1991,7 @@
             },
             {
               "name": "caseNum",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2098,7 +2007,217 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "CreatePatientMutationInput",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "name",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "hkid",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "birthday",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Date",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "confirmedDay",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Date",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "caseNum",
+              "description": null,
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "clientMutationId",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "UpdatePatientMutationPayload",
+          "description": null,
+          "fields": [
+            {
+              "name": "id",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "name",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "hkid",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "birthday",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Date",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "confirmedDay",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Date",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "caseNum",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "clientMutationId",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2117,12 +2236,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "UpdatePatientMutationInput",
-          "description": "",
+          "description": null,
           "fields": null,
           "inputFields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2136,7 +2255,7 @@
             },
             {
               "name": "name",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2146,7 +2265,7 @@
             },
             {
               "name": "hkid",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2156,7 +2275,7 @@
             },
             {
               "name": "birthday",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "Date",
@@ -2166,7 +2285,7 @@
             },
             {
               "name": "confirmedDay",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "Date",
@@ -2176,7 +2295,7 @@
             },
             {
               "name": "caseNum",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -2186,7 +2305,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2201,12 +2320,12 @@
         },
         {
           "kind": "OBJECT",
-          "name": "UpdatePatientMutationPayload",
-          "description": "",
+          "name": "DeletePatientMutationPayload",
+          "description": null,
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2221,88 +2340,8 @@
               "deprecationReason": null
             },
             {
-              "name": "name",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "hkid",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "birthday",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Date",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "confirmedDay",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Date",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "caseNum",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Int",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2321,12 +2360,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "DeletePatientMutationInput",
-          "description": "",
+          "description": null,
           "fields": null,
           "inputFields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2340,7 +2379,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2355,12 +2394,12 @@
         },
         {
           "kind": "OBJECT",
-          "name": "DeletePatientMutationPayload",
-          "description": "",
+          "name": "CreateLocationMutationPayload",
+          "description": null,
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2375,8 +2414,88 @@
               "deprecationReason": null
             },
             {
+              "name": "name",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "address",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "district",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "coordinateX",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Float",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "coordinateY",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Float",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2393,14 +2512,24 @@
           "possibleTypes": null
         },
         {
+          "kind": "SCALAR",
+          "name": "Float",
+          "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point). ",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
           "kind": "INPUT_OBJECT",
           "name": "CreateLocationMutationInput",
-          "description": "",
+          "description": null,
           "fields": null,
           "inputFields": [
             {
               "name": "name",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2414,7 +2543,7 @@
             },
             {
               "name": "address",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2428,7 +2557,7 @@
             },
             {
               "name": "district",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2442,7 +2571,7 @@
             },
             {
               "name": "coordinateX",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2456,7 +2585,7 @@
             },
             {
               "name": "coordinateY",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2470,7 +2599,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2484,23 +2613,13 @@
           "possibleTypes": null
         },
         {
-          "kind": "SCALAR",
-          "name": "Float",
-          "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point). ",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
           "kind": "OBJECT",
-          "name": "CreateLocationMutationPayload",
-          "description": "",
+          "name": "UpdateLocationMutationPayload",
+          "description": null,
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2516,7 +2635,7 @@
             },
             {
               "name": "name",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2532,7 +2651,7 @@
             },
             {
               "name": "address",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2548,7 +2667,7 @@
             },
             {
               "name": "district",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2564,7 +2683,7 @@
             },
             {
               "name": "coordinateX",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2580,7 +2699,7 @@
             },
             {
               "name": "coordinateY",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2596,7 +2715,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2615,12 +2734,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "UpdateLocationMutationInput",
-          "description": "",
+          "description": null,
           "fields": null,
           "inputFields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2634,7 +2753,7 @@
             },
             {
               "name": "name",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2644,7 +2763,7 @@
             },
             {
               "name": "address",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2654,7 +2773,7 @@
             },
             {
               "name": "district",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2664,7 +2783,7 @@
             },
             {
               "name": "coordinateX",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2674,7 +2793,7 @@
             },
             {
               "name": "coordinateY",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2684,7 +2803,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2699,12 +2818,12 @@
         },
         {
           "kind": "OBJECT",
-          "name": "UpdateLocationMutationPayload",
-          "description": "",
+          "name": "DeleteLocationMutationPayload",
+          "description": null,
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2719,88 +2838,8 @@
               "deprecationReason": null
             },
             {
-              "name": "name",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "address",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "district",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "coordinateX",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Float",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "coordinateY",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Float",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2819,12 +2858,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "DeleteLocationMutationInput",
-          "description": "",
+          "description": null,
           "fields": null,
           "inputFields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2838,7 +2877,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2853,12 +2892,12 @@
         },
         {
           "kind": "OBJECT",
-          "name": "DeleteLocationMutationPayload",
-          "description": "",
+          "name": "CreatePatientHistoryMutationPayload",
+          "description": null,
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -2873,8 +2912,96 @@
               "deprecationReason": null
             },
             {
+              "name": "patientId",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "locationId",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "ID",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "start",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Date",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "end",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Date",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "detail",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "category",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2893,12 +3020,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "CreatePatientHistoryMutationInput",
-          "description": "",
+          "description": null,
           "fields": null,
           "inputFields": [
             {
               "name": "patientId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2912,7 +3039,7 @@
             },
             {
               "name": "locationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2926,7 +3053,7 @@
             },
             {
               "name": "start",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2940,7 +3067,7 @@
             },
             {
               "name": "end",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2954,7 +3081,7 @@
             },
             {
               "name": "detail",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2968,7 +3095,7 @@
             },
             {
               "name": "category",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2982,7 +3109,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2997,12 +3124,12 @@
         },
         {
           "kind": "OBJECT",
-          "name": "CreatePatientHistoryMutationPayload",
-          "description": "",
+          "name": "UpdatePatientHistoryMutationPayload",
+          "description": null,
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -3018,7 +3145,7 @@
             },
             {
               "name": "patientId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3030,7 +3157,7 @@
             },
             {
               "name": "locationId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3042,7 +3169,7 @@
             },
             {
               "name": "start",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -3058,7 +3185,7 @@
             },
             {
               "name": "end",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -3074,7 +3201,7 @@
             },
             {
               "name": "detail",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -3090,7 +3217,7 @@
             },
             {
               "name": "category",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -3106,7 +3233,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3125,12 +3252,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "UpdatePatientHistoryMutationInput",
-          "description": "",
+          "description": null,
           "fields": null,
           "inputFields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3144,7 +3271,7 @@
             },
             {
               "name": "patientId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "ID",
@@ -3154,7 +3281,7 @@
             },
             {
               "name": "locationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "ID",
@@ -3164,7 +3291,7 @@
             },
             {
               "name": "start",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "Date",
@@ -3174,7 +3301,7 @@
             },
             {
               "name": "end",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "Date",
@@ -3184,7 +3311,7 @@
             },
             {
               "name": "detail",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3194,7 +3321,7 @@
             },
             {
               "name": "category",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3204,7 +3331,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3219,12 +3346,12 @@
         },
         {
           "kind": "OBJECT",
-          "name": "UpdatePatientHistoryMutationPayload",
-          "description": "",
+          "name": "DeletePatientHistoryMutationPayload",
+          "description": null,
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -3239,96 +3366,8 @@
               "deprecationReason": null
             },
             {
-              "name": "patientId",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "locationId",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "start",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Date",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "end",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Date",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "detail",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "category",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3347,12 +3386,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "DeletePatientHistoryMutationInput",
-          "description": "",
+          "description": null,
           "fields": null,
           "inputFields": [
             {
               "name": "id",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3366,7 +3405,7 @@
             },
             {
               "name": "clientMutationId",
-              "description": "",
+              "description": null,
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3381,47 +3420,8 @@
         },
         {
           "kind": "OBJECT",
-          "name": "DeletePatientHistoryMutationPayload",
-          "description": "",
-          "fields": [
-            {
-              "name": "id",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "clientMutationId",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
           "name": "__Schema",
-          "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
+          "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation and subscription operations.",
           "fields": [
             {
               "name": "types",
@@ -3705,7 +3705,7 @@
         {
           "kind": "ENUM",
           "name": "__TypeKind",
-          "description": "An enum describing what kind of type a given `__Type` is.",
+          "description": "An enum describing what kind of type a given `__Type` is",
           "fields": null,
           "inputFields": null,
           "interfaces": null,
@@ -3919,7 +3919,7 @@
             },
             {
               "name": "defaultValue",
-              "description": "A GraphQL-formatted string representing the default value for this input value.",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -4201,7 +4201,7 @@
             },
             {
               "name": "OBJECT",
-              "description": "Location adjacent to an object type definition.",
+              "description": "Location adjacent to an object definition.",
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -4243,7 +4243,7 @@
             },
             {
               "name": "INPUT_OBJECT",
-              "description": "Location adjacent to an input object type definition.",
+              "description": "Location adjacent to an input object definition.",
               "isDeprecated": false,
               "deprecationReason": null
             },
@@ -4258,31 +4258,6 @@
         }
       ],
       "directives": [
-        {
-          "name": "skip",
-          "description": "Directs the executor to skip this field or fragment when the `if` argument is true.",
-          "locations": [
-            "FIELD",
-            "FRAGMENT_SPREAD",
-            "INLINE_FRAGMENT"
-          ],
-          "args": [
-            {
-              "name": "if",
-              "description": "Skipped when true.",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Boolean",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            }
-          ]
-        },
         {
           "name": "include",
           "description": "Directs the executor to include this field or fragment only when the `if` argument is true.",
@@ -4309,22 +4284,27 @@
           ]
         },
         {
-          "name": "deprecated",
-          "description": "Marks an element of a GraphQL schema as no longer supported.",
+          "name": "skip",
+          "description": "Directs the executor to skip this field or fragment when the `if` argument is true.",
           "locations": [
-            "FIELD_DEFINITION",
-            "ENUM_VALUE"
+            "FIELD",
+            "FRAGMENT_SPREAD",
+            "INLINE_FRAGMENT"
           ],
           "args": [
             {
-              "name": "reason",
-              "description": "Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted in [Markdown](https://daringfireball.net/projects/markdown/).",
+              "name": "if",
+              "description": "Skipped when true.",
               "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
               },
-              "defaultValue": "\"No longer supported\""
+              "defaultValue": null
             }
           ]
         }
