@@ -9,6 +9,7 @@ from server.serializers import LocationSerializer, PatientHistorySerializer, \
 from graphene_django.rest_framework.mutation import SerializerMutation
 from graphql_relay import from_global_id, to_global_id
 from django.contrib.gis.geos import Point
+from django.contrib.auth import authenticate, login, logout
 
 
 class PatientNode(DjangoObjectType):
@@ -76,6 +77,9 @@ class CreatePatientMutation(relay.ClientIDMutation):
     @classmethod
     def mutate_and_get_payload(cls, root, info, name, hkid, birthday,
         confirmed_day, case_num, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = Patient.objects.create(
             name=name,
             hkid=hkid.upper().replace('(', '').replace(')', ''),
@@ -113,6 +117,9 @@ class UpdatePatientMutation(relay.ClientIDMutation):
     @classmethod
     def mutate_and_get_payload(cls, root, info, id, name, hkid, birthday,
         confirmed_day, case_num, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = Patient.objects.get(
             pk=from_global_id(id)[1]
         )
@@ -145,6 +152,9 @@ class DeletePatientMutation(relay.ClientIDMutation):
 
     @classmethod
     def mutate_and_get_payload(cls, root, info, id, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = Patient.objects.get(
             pk=from_global_id(id)[1]
         )
@@ -171,6 +181,9 @@ class CreateLocationMutation(relay.ClientIDMutation):
     @classmethod
     def mutate_and_get_payload(cls, root, info, name, address, district,
         coordinate_x, coordinate_y, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = Location.objects.create(
             name=name,
             address=address,
@@ -207,6 +220,9 @@ class UpdateLocationMutation(relay.ClientIDMutation):
     @classmethod
     def mutate_and_get_payload(cls, root, info, id, name, address, district,
         coordinate_x, coordinate_y, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = Location.objects.get(
             pk=from_global_id(id)[1]
         )
@@ -241,6 +257,9 @@ class DeleteLocationMutation(relay.ClientIDMutation):
 
     @classmethod
     def mutate_and_get_payload(cls, root, info, id, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = Location.objects.get(
             pk=from_global_id(id)[1]
         )
@@ -269,6 +288,9 @@ class CreatePatientHistoryMutation(relay.ClientIDMutation):
     @classmethod
     def mutate_and_get_payload(cls, root, info, patient_id, location_id,
         start, end, detail, category, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = PatientHistory.objects.create(
             patient_id=from_global_id(patient_id)[1],
             location_id=from_global_id(location_id)[1],
@@ -310,6 +332,9 @@ class UpdatePatientHistoryMutation(relay.ClientIDMutation):
     @classmethod
     def mutate_and_get_payload(cls, root, info, id, patient_id, location_id,
         start, end, detail, category, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = PatientHistory.objects.get(
             pk=from_global_id(id)[1]
         )
@@ -347,10 +372,43 @@ class DeletePatientHistoryMutation(relay.ClientIDMutation):
 
     @classmethod
     def mutate_and_get_payload(cls, root, info, id, client_mutation_id):
+        if not info.context.user.is_authenticated():
+            raise PermissionError("user not logged in")
+
         p = PatientHistory.objects.get(pk=from_global_id(id)[1])
         oid = to_global_id(PatientHistoryNode.__name__, p.id)
         p.delete()
         return DeletePatientHistoryMutation(id=oid)
+
+
+class LoginMutation(relay.ClientIDMutation):
+    class Input:
+        username = graphene.String(required=True)
+        password = graphene.String(required=True)
+
+    success = graphene.Boolean(required=True)
+    groups = graphene.List(graphene.String, required=True)
+
+    @classmethod
+    def mutate_and_get_payload(cls, root, info, username, password):
+        user = authenticate(info.context, username=username, password=password)
+        if user is not None:
+            login(info.context, user)
+            return LoginMutation(success=True, groups=user.groups.all())
+        else:
+            return LoginMutation(success=False, groups=[])
+
+
+class LogoutMutation(relay.ClientIDMutation):
+    class Input:
+        pass
+
+    success = graphene.Boolean(required=True)
+
+    @classmethod
+    def mutate_and_get_payload(cls, root, info):
+        logout(info.context)
+        return LogoutMutation(success=True)
 
 
 # class PatientMutation(SerializerMutation):

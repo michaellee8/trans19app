@@ -19,11 +19,13 @@ from graphene_django.views import GraphQLView
 from graphql_playground.views import GraphQLPlaygroundView
 from trans19app.schema import graphql_schema
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('graphql', csrf_exempt(
         GraphQLView.as_view(graphiql=True, schema=graphql_schema))),
     path('playground/',
-         GraphQLPlaygroundView.as_view(endpoint="/graphql"))
+         GraphQLPlaygroundView.as_view(endpoint="/graphql")),
+    path('accounts/login/', auth_views.LoginView.as_view()),
 ]
